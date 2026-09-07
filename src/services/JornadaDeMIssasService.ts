@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { JornadaDeMissasRepository } from '../repositories';
+import { JornadaDeMissasRepository } from '../repositories/jornadaDeMissasRepository';
+
 
 @Injectable()
 export class JornadaDeMissasService {

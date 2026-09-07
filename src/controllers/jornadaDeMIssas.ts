@@ -6,7 +6,7 @@ import {
   HttpStatus,
   Post,
 } from '@nestjs/common';
-import { ImpawnJornadaDeMissasUseCase } from '../useCase';
+import { ImpawnJornadaDeMissasUseCase } from '../useCase/impawnJornadaDeMissasUseCase';
 
 @Controller('/jornadaDeMissas')
 export class JornadaDeMissasController {

@@ -1,1 +1,0 @@
-export { ImpawnJornadaDeMissasUseCase } from './impawnJornadaDeMissasUseCase';

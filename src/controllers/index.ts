@@ -1,1 +1,0 @@
-export { JornadaDeMissasController } from './jornadaDeMIssas';

@@ -9,13 +9,13 @@ export class JornadaDeMissasRepository implements JornadaDeMissasRepositoryInter
 
   public async impawn(name: string, date: Date) {
     try {
-      await this.prismaService.jornadaDeMissas.create({
+      /*await this.prismaService.jornadaDeMissas.create({
         data: {
-          name,
+          
           date: date,
         },
       });
-
+    */
       return {
         success: true,
       };

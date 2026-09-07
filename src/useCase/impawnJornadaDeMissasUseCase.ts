@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { JornadaDeMissasService } from '../services';
+import { JornadaDeMissasService } from '../services/JornadaDeMIssasService';
+
 
 @Injectable()
 export class ImpawnJornadaDeMissasUseCase {

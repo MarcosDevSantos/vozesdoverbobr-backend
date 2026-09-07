@@ -1,1 +1,0 @@
-export { JornadaDeMissasRepository } from './jornadaDeMissasRepository';
