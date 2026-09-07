@@ -27,11 +27,11 @@ export class UsersRepository implements UsersRepositoryInterface {
     }
   }
 
-  public async findOne(email: string){
+  public async findOne(email: string) {
     return await this.prismaService.user.findUnique({
-        where: {
-            email: email
-        }
-    })
+      where: {
+        email: email,
+      },
+    });
   }
 }

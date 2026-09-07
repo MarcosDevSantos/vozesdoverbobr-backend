@@ -11,10 +11,18 @@ import { createUserUseCase } from './useCase/createUserUseCase';
 import { JornadaDeMissasController } from './controllers/jornadaDeMIssas';
 import { UsersController } from './controllers/users';
 import { loginUserUseCase } from './useCase/loginUserUseCase';
+import { JwtModule } from '@nestjs/jwt';
+import { jwtConstants } from './constants/jwtConstant';
+import { AuthGuard } from './auth/authGuard';
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+    }),
+    JwtModule.register({
+      global: true,
+      secret: jwtConstants.secret,
+      signOptions: { expiresIn: '2d' },
     }),
   ],
   controllers: [JornadaDeMissasController, UsersController],
@@ -26,7 +34,8 @@ import { loginUserUseCase } from './useCase/loginUserUseCase';
     UsersRepository,
     UsersService,
     createUserUseCase,
-    loginUserUseCase
+    loginUserUseCase,
+    AuthGuard,
   ],
 })
 export class AppModule {}
