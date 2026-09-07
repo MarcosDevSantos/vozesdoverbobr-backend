@@ -1,0 +1,1 @@
+export { JornadaDeMissasService } from './JornadaDeMIssasService';
